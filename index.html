@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Custom LED Red Light Effect */
+        .led-red {
+            text-shadow: 0 0 5px #f00, 0 0 10px #f00, 0 0 20px #f00, 0 0 30px #f00;
+        }
+    </style>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             // Redirect to #about on page load
@@ -14,7 +20,7 @@
 </head>
 <body>
     <header>
-        <h1>My Portfolio</h1>
+        <h1 class="led-red">My Portfolio</h1>
         <nav>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
@@ -24,13 +30,50 @@
 
     <section id="about" class="about-section">
         <div class="about-container">
-            <h2>About Me</h2>
+            <h2 class="led-red">About Me</h2>
             <p>
-                Hello! I'm Alex, a passionate scriptwriter who loves crafting compelling stories. 
-                With years of experience in creative writing, I've worked on various projects that span multiple genres.
-                I aim to bring imagination and originality to every project I undertake.
+                Hello! I'm Alexithema, a Computer System & Networking student at a college in Malaysia.<br>
+                I have a strong passion for cybersecurity with two years of experience in networking and computer systems.
             </p>
-            <img src="https://via.placeholder.com/300" alt="Profile Picture" class="about-image">
+            <h3 class="led-red">Languages</h3>
+            <ul>
+                <li>Malay (Bahasa Melayu)</li>
+                <li>Indonesian (Bahasa Indonesia)</li>
+                <li>English</li>
+            </ul>
+            <h3 class="led-red">Skills & Expertise</h3>
+            <p><strong>Cybersecurity:</strong></p>
+            <ul>
+                <li>Proficient in SQL Injection and XSS Injection techniques</li>
+                <li>Skilled in Social Engineering methods</li>
+            </ul>
+            <p><strong>Networking:</strong></p>
+            <ul>
+                <li>Network analysis and troubleshooting</li>
+                <li>Knowledge of Cisco networking basics</li>
+                <li>Understanding and applying network protocols</li>
+                <li>Proficient in performing TCP/IP subnetting and addressing</li>
+            </ul>
+            <p><strong>Programming:</strong> Basic skills in Python and Java</p>
+            <p><strong>System Administration:</strong></p>
+            <ul>
+                <li>Server hardware installation and maintenance</li>
+                <li>Comprehensive understanding of computer systems and related technologies</li>
+            </ul>
+            <p><strong>Other Technical Skills:</strong></p>
+            <ul>
+                <li>Experience gained from K*Skills College</li>
+                <li>Ability to analyze and implement secure system architectures</li>
+            </ul>
+            <h3 class="led-red">Online Platforms</h3>
+            <ul>
+                <li><a href="https://hackerone.com/alexithemaa">HackerOne</a></li>
+                <li><a href="https://github.com/alexithema">GitHub</a></li>
+                <li><a href="https://medium.com/@sinzoxp">Medium</a></li>
+                <li><a href="https://zone-xsec.com/archive/attacker/alexithema">Zone-XSec</a></li>
+                <li><a href="https://www.tiktok.com/@alexithemaa">TikTok</a></li>
+                <li><a href="https://www.instagram.com/quevriixs/#">Instagram</a></li>
+            </ul>
         </div>
     </section>
 
