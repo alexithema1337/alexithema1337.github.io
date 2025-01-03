@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Redirect to #about on page load
+            window.location.hash = "#about";
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -15,6 +21,18 @@
             <a href="#contact">Contact</a>
         </nav>
     </header>
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm Alex, a passionate scriptwriter who loves crafting compelling stories. 
+                With years of experience in creative writing, I've worked on various projects that span multiple genres.
+                I aim to bring imagination and originality to every project I undertake.
+            </p>
+            <img src="https://via.placeholder.com/300" alt="Profile Picture" class="about-image">
+        </div>
+    </section>
 
     <section class="container" id="projects">
         <div class="card">
