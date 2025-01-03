@@ -1,136 +1,69 @@
-/* General Reset */
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #000000, #880000);
+    background-color: #111;
     color: #fff;
-    min-height: 100vh;
 }
 
-/* Header */
 header {
-    width: 100%;
+    background-color: #222;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.9);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
+    text-align: center;
 }
 
 header h1 {
-    font-size: 24px;
     color: #f00;
-    font-weight: bold;
+}
+
+nav {
+    margin: 10px 0;
+    text-align: center;
 }
 
 nav a {
-    margin: 0 15px;
-    color: #fff;
+    color: #f00;
     text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s;
+    margin: 0 15px;
 }
 
 nav a:hover {
-    color: #f00;
+    text-decoration: underline;
 }
 
-/* Home Section */
-#home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-    padding-top: 100px;
-}
-
-#home h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-    color: #fff;
-}
-
-#home h2 {
-    font-size: 32px;
-    color: #f00;
-    margin-bottom: 20px;
-}
-
-#home p {
-    font-size: 18px;
-    color: #aaa;
-    max-width: 600px;
-    margin: 0 auto 20px auto;
-}
-
-#home button {
-    background-color: #f00;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#home button:hover {
-    background-color: #bb0000;
-}
-
-/* Cards for Other Sections */
 .container {
-    padding: 100px 20px;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .card {
-    background: rgba(0, 0, 0, 0.8);
-    margin: 15px;
-    border-radius: 10px;
-    overflow: hidden;
+    background-color: #222;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
     width: 300px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s;
     text-align: center;
-}
-
-.card:hover {
-    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    border-radius: 8px;
 }
 
 .card h3 {
     color: #f00;
-    margin: 15px 0;
-    font-size: 20px;
+    margin: 10px 0;
 }
 
 .card p {
     color: #bbb;
-    padding: 0 10px 15px;
 }
 
-/* Footer */
 footer {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #222;
     text-align: center;
     padding: 10px;
     position: relative;
@@ -141,23 +74,9 @@ footer {
 footer p {
     margin: 0;
     color: #777;
-    font-size: 14px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-    #home h1 {
-        font-size: 36px;
-    }
-
-    #home h2 {
-        font-size: 24px;
-    }
-
-    #home p {
-        font-size: 16px;
-    }
-
     .card {
         width: 90%;
     }
